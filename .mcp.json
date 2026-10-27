@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chromebook-sim": {
+      "command": "bun",
+      "args": ["src/cli.ts", "mcp"]
+    }
+  }
+}

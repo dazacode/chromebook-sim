@@ -1,0 +1,20 @@
+{
+  "name": "chromebook-sim",
+  "version": "1.0.0",
+  "description": "Simulates a K-12 school Chromebook web filter: tells you if a URL would be blocked, why, and shows the block page. CLI, HTTP API, and MCP server for agents.",
+  "type": "module",
+  "bin": {
+    "chromebook-sim": "./src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun src/cli.ts serve",
+    "dev": "bun --watch src/cli.ts serve",
+    "check": "bun src/cli.ts check",
+    "mcp": "bun src/cli.ts mcp",
+    "test": "bun test",
+    "typecheck": "bunx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
